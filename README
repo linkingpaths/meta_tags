@@ -1,0 +1,1 @@
+A plugin for rails that gives you control of the html <meta> tags on a application/controller/action basis. Inspired by [merb_meta](http://github.com/coryodaniel/merb_meta)
