@@ -1,1 +1,24 @@
-A plugin for rails that gives you control of the html <meta> tags on a application/controller/action basis. Inspired by [merb_meta](http://github.com/coryodaniel/merb_meta)
+A plugin for rails that gives you control of the html <meta> tags on a application/controller/action basis. 
+
+Controllers
+-----------
+
+
+Helpers
+-------
+
+<code>
+<%= meta\_tag :title %>
+\# Should render as
+\# <meta name="title" content="Woo, the Internet!!!" />
+</code>
+
+<pre>
+<%= meta\_tags %>
+\# Should render all the meta tags defined
+\# <meta name="title" content="Woo, the Internet!!!" />
+\# <meta name="description" content="bla, bla, bla" />
+\# <meta name="keywords" content="key1, key2, key3" />
+</pre>
+
+Inspired by [merb_meta](http://github.com/coryodaniel/merb_meta)

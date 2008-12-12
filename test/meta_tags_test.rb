@@ -114,8 +114,7 @@ class MetaTagsTest < Test::Unit::TestCase
       [title, descr, keywo].each{|tag|
         assert_contains(meta_tags, tag)
       }
-      #<%= meta_tag :title %>
-      #<%= meta_tags %>
+
     end
   end
   
