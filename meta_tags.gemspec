@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.version = "0.0.2"
+  s.version = "0.0.3"
   s.date = %q{2008-12-15}
  
   s.name = %q{meta_tags}
