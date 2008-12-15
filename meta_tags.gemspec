@@ -7,12 +7,14 @@ Gem::Specification.new do |s|
   s.authors = ["Linking Paths", "Aitor Garcia"]
   s.description = %q{Get your xHTML meta tags in control.}
   s.email = %q{aitor@linkingpaths.com}
-  s.files = FileList["[A-Z]*", "{lib,rails,test}/**/*"]
+  s.files = ['lib', 'lib/meta_tags.rb', 'MIT-LICENSE', 'rails', 'rails/init.rb', 'Rakefile', 'README.md', 'test', 'test/meta_tags_test.rb']
+  
   s.homepage = %q{http://github.com/linkingpaths/meta_tags}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.2.0}
   s.summary = %q{Get your xHTML meta tags in control.}
- 
+  s.has_rdoc = true
+  
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 2
