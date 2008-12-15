@@ -104,10 +104,12 @@ class MetaTagsTest < Test::Unit::TestCase
     should "render the html tags correctly" do
       default_per_controller = request(@default_per_controller)
       @meta_data = default_per_controller.meta
+      title_tag = %{<title>#{DEF_TITLE}</title>}
       title = %{<meta name="title" content="#{DEF_TITLE}" />}
       descr = %{<meta name="description" content="#{DEF_DESCR}" />}
       keywo = %{<meta name="keywords" content="#{DEF_KEYWO}" />}
       
+      assert_equal title_tag, title_tag
       assert_equal title, meta_tag(:title)
       assert_equal descr, meta_tag(:description)
       assert_equal keywo, meta_tag(:keywords)
