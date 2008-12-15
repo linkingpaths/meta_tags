@@ -7,14 +7,14 @@ A rails plugin that gives you control over the xhtml meta tags rendered in your 
 Install
 -------
 
-´sudo gem install linkingpaths-meta_tags´
+´sudo gem install linkingpaths-meta\_tags´
 
 The junk
 --------
 
 * In your controllers
 
-You can setup a default value in your application controller:
+You can setup a default value for any meta name/content pair in your application controller:
 
 <pre>
 class ApplicationController < ActionController::Base
@@ -77,7 +77,7 @@ This one is highly inspired by [merb\_meta](http://github.com/coryodaniel/merb_m
 More
 ----
 
-[meta\_tags on github](http://github.com/linkingpaths/alea)
+[meta\_tags on github](http://github.com/linkingpaths/meta_tags)
 
 Copyright (c) 2008 Linking Paths, released under the MIT license
 
