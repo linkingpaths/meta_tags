@@ -1,7 +1,7 @@
 
-meta_tags
+meta\_tags
 ============
-A rails plugin that gives you control over the xhtml meta tags rendered in your template on a application/controller/action basis.  
+A rails plugin that gives you control over the xhtml meta tags rendered in your template on a application/controller/action basis.
 
 
 Install
@@ -9,7 +9,7 @@ Install
 
 ´sudo gem install linkingpaths-meta_tags´
 
-The junk 
+The junk
 --------
 
 * In your controllers
@@ -31,14 +31,14 @@ class SpecificController < ApplicationController
   meta :title => "This is an app related controller"
 
   def spice_up
-    meta :title => "overwriten in this action", 
+    meta :title => "overwriten in this action",
          :keywords => "p0rn, Jenna Jameson, Kristal Summers"
     render
     # :title => "toverwriten in this action"
     # :keywords => "p0rn, Jenna Jameson, Kristal Summers"
     # :description => "My default page description"
   end
-  
+
   def not_spice_up
     render
     # :title       => "This is an app related controller"
@@ -67,17 +67,17 @@ Some helpers are automatically available in your views:
 # <meta name="title" content="This is an app related controller" />
 # <meta name="description" content="Add a sexy default description here." />
 # <meta name="keywords" content="sex, lies, video tapes" />
-</pre> 
+</pre>
 
 Credits
 -------
 
-This one is highly inspired by [merb_meta](http://github.com/coryodaniel/merb_meta). If you don't like the api you can try [rails-meta\_tags](http://github.com/delynn/rails-meta_tags), [kpumuk's meta-tags](http://github.com/kpumuk/meta-tags) or [meta\_on\_rails](http://github.com/ashchan/meta_on_rails).
+This one is highly inspired by [merb\_meta](http://github.com/coryodaniel/merb_meta). If you don't like the api you can try [rails-meta\_tags](http://github.com/delynn/rails-meta_tags), [kpumuk's meta-tags](http://github.com/kpumuk/meta-tags) or [meta\_on\_rails](http://github.com/ashchan/meta_on_rails).
 
 More
--------
+----
 
-[http://github.com/linkingpaths/meta_tags](http://github.com/linkingpaths/alea)
+[meta\_tags on github](http://github.com/linkingpaths/alea)
 
 Copyright (c) 2008 Linking Paths, released under the MIT license
 
