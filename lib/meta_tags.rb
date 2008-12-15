@@ -12,27 +12,24 @@ module LinkingPaths
 
         # Default any subclasses meta tags to that of the parent
         @meta_data ||= self.superclass.respond_to?(:meta) ? self.superclass.meta.clone : {}
-        if tags.is_a? Hash
-          @meta_data.merge!(tags) 
-        elsif tags.is_a? Symbol
-          return @meta_data[tags]
-        end
-        @meta_data
+        manage_meta @meta_data, tags
       end
-
+      
+      def manage_meta(meta, tags)
+        if tags.is_a? Hash
+          meta.merge!(tags) 
+        elsif tags.is_a? Symbol
+          return meta[tags]
+        end
+        meta
+      end
       
     end
     
     module InstanceMethods
       def meta(tags = nil)
         @meta_data ||= self.class.meta.clone
-        if tags.is_a? Hash
-          @meta_data.merge!(tags)
-          @meta_data
-        elsif tags.is_a? Symbol
-          return @meta_data[tags]
-        end
-        @meta_data
+        self.class.manage_meta @meta_data, tags
       end
     end
     
