@@ -99,7 +99,8 @@ class MetaTagsTest < Test::Unit::TestCase
     
     should "be able to have meta information on an action-by-action basis" do
       override_per_action = request(@override_per_action_controller, "index")
-      assert_equal override_per_action.meta(:keywords), ACTI_KEYWO
+      assert_equal ACTI_KEYWO, override_per_action.meta(:keywords)
+
     end
     should "render the html tags correctly" do
       default_per_controller = request(@default_per_controller)
